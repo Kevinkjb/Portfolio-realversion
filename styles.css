@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* Nav Section */
+.main-nav a:hover,
+.main-nav .active,
+.main-nav .active:focus,
+.main-nav li:hover>a{
+    color: #66BFBF;
+}
+.nav-item{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 0;
+}
+.nav-list, .nav-link{
+    margin: 0 .5rem;
+    padding: .8rem;
+    list-style-type: none;
+    text-decoration: none !important;
+    color: #7e7d7d;
+    font-family: 'Nerko One', cursive;
+    text-transform: uppercase;
+}
+.nav-brand{
+    margin: 0 .5rem;
+    padding: .8rem;
+    font-size: 2rem;
+    color: #000;
+    text-decoration: none !important;
+    font-family: 'Nerko One', cursive;
+}
+.nav-brand:hover{
+    color: #66BFBF;
+}
+.head-container{
+    position: fixed;
+    background-color: #fff;
+    /* box-shadow: .6px .6px .6px .6px #000; */
+}
+
+/* Hero Section */
+
+#hero{
+    background: url("https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/tnc_16935516.jpg?crop=0%2C235%2C4000%2C2200&wid=4000&hei=2200&scl=1.0") repeat scroll center center/cover;
+    height: 100vh;
+    width: 100%;
+}
+.hero-title{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    height: 100vh;
+}
+.hero-content h1{
+    font-size: 3rem;
+    font-family: 'Nerko One', cursive;
+}
+.hero-list{
+    display: flex;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.hero-list li a i{
+    padding-right: 1.5rem;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* About Section */
+
+#about{
+    background-color: #f7f7f7;
+    height: 100%;
+    padding: 3rem 0;
+}
+
+.profile-img{
+    width: 100%;
+}
+.about-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    color: #999999;
+    padding: 0 4rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+.about-info p{
+    width: 80%;
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+}
+/* .about-section{
+    display: flex;
+} */
+
+/* Service Section */
+#services{
+    background-color: #f7f7f7;
+    padding-bottom: 3rem;
+}
+.service-info{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+.service-info p{
+    font-size: 13px;
+    color: #999999;
+    line-height: 1.7;
+}
+.service-info span{
+    color: #292929;
+    font-size: 14px;
+    padding: .5rem 0 .4rem 0;
+}
+.service-icon{
+    font-size: 3rem;
+    color: #66BFBF;
+}
+
+/* Portfolio Section */
+.box{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2rem;
+}
+#portfolio{
+    padding: 3rem 0;
+}
+.portfolio-img{
+    width: 100%;
+}
+.container > .portfolio-heading{
+    text-align: center;
+    margin: 2rem 0;
+    margin-bottom: 5rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+.container .portfolio-heading  > h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #292929;
+}
+/* .container .portfolio-items{
+    display: flex;
+    justify-content: center;
+} */
+
+.portfolio-list{
+    list-style-type: none;
+    padding-left: 0;
+
+}
+.portfolio-list .portfolio-listItem{
+    display: inline-block;
+    font-size: .9rem;
+    margin-bottom: 2rem;
+    color: #999999;
+    padding: 10px 15px 8px 15px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+.portfolio-listItem:hover{
+    color: #66BFBF;
+    text-decoration: underline;
+}
+.portfolio-listItem:first-child{
+    color: #66BFBF;
+}
+.portfolio-img:hover{
+ transform: scale(1.05);
+ transition: .3s ease;
+ opacity: .8;
+}
+
+/* Skills Section */
+#skills{
+    padding: 5rem 0;
+    background-color: #f7f7f7;
+
+}
+#skills > .container{
+    padding-bottom: 2rem;
+}
+.skills-heading > h1{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #292929;
+    text-transform: uppercase;
+    margin: 2rem 0;
+    margin-bottom: 5rem;
+    font-family: 'Poppins', sans-serif;
+}
+.skills-title{
+    text-align: left;
+    padding: 1rem 0;
+    font-family: 'Poppins', sans-serif;
+    color: #7e7d7d;
+    font-size: .8rem;
+}
+.progress{
+    border: 1px solid #7e7d7d;
+}
+.html{
+    width: 90%;
+    animation: html 3s forwards;
+
+}
+.css{
+    width: 80%;
+    animation: css 3s forwards;
+}
+.javascript{
+    width: 60%;
+    animation: javascript 3s forwards;
+}
+.bootstrap{
+    width: 80%;
+    animation: bootstrap 3s forwards;
+}
+.nodejs{
+    width: 50%;
+    animation: nodejs 3s forwards;
+}
+.jquery{
+    width: 60%;
+    animation: jquery 3s forwards;
+}
+
+@keyframes html {
+    0%{width: 0}
+    100%{width: 90%;}
+}
+@keyframes css {
+    0%{width: 0}
+    100%{width: 80%;}
+}
+@keyframes javascript {
+    0%{width: 0}
+    100%{width: 60%;}
+}
+@keyframes bootstrap {
+    0%{width: 0}
+    100%{width: 80%;}
+}
+@keyframes nodejs {
+    0%{width: 0}
+    100%{width: 50%;}
+}
+@keyframes jquery {
+    0%{width: 0}
+    100%{width: 60%;}
+}
+
+/* Contact Section */
+#contact{
+    margin-top: 10rem;
+    padding: 3rem 0;
+    margin-bottom: 4rem;
+}
+.contact-title > h1{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.contact-details{
+    list-style-type: none;
+    text-align: left;
+    padding-left: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #898989;
+    line-height: 2;
+    font-weight: 400;
+}
+
+.form-group{
+    border: 1px solid #999999;
+}
+.form-group input{
+    font-weight: 600;
+    border: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 1rem 1rem 1rem .7rem;
+    width: 100%;
+}
+.form-group textarea{
+    font-weight: 600;
+    border: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: .2rem 4rem 6rem .7rem;
+    width: 100%;
+}
+input:focus, textarea:focus{
+    outline: 1px solid #66BFBF;
+}
+.button-btn{
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #292929;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+}
+.button-item button:hover{
+    background-color: rgba(1, 1, 1, 0.7);
+    transition: .5s ease;
+}
+
+/* Footer Section */
+#footer{
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+
+.footer-social{
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+.footer-social li a i{
+    padding: 0 1rem;
+    color: #999999;
+}
+.copyrights{
+    font-size: 13px;
+    color: #999999;
+    font-weight: 600;
+    letter-spacing: 2px;
+    
+}
+.designby{
+    color: #999999;
+    font-size: .9rem;
+    font-weight: 300;
+
+
+}
+.container .designby > a{
+    color: #000;
+    text-decoration: none;
+    font-size: .9rem;
+}
+.fa-brands:hover{
+    color: #66BFBF;
+}
+
+/* Mobile Devices Section */
+@media screen and (max-width: 1200px){
+    .about-info{
+        padding: 0;
+    }
+    .about-info p{
+        width: 100%;
+    }
+    .profile-img{
+        width: 100%;
+    }
+    .img-container{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 992px){
+
+    .profile-img{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    .about-info{
+        padding: 0;
+    }
+    .about-info p{
+        width: 100%;
+    }
+    .main-nav{
+        display: none;
+    }
+}
+@media screen and (max-width: 574px){
+    #about, #services, #contact, #services{
+        padding: 2rem 1rem;
+    }
+    .hero-title{
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .about-info{
+        padding: 1rem;
+    }
+    .about-info h3{
+        font-size: 1.3rem;
+    }
+    .about-info p{
+        width: 100%;
+        font-size: 13px;
+    }
+    #contact{
+        margin-top: 5rem;
+        padding: 0 1rem;
+    }
+    #services, #skills, #about {
+        padding: 2rem 1rem;
+    }
+    #skills{
+        padding-top: 2rem;
+    }
+    .hero-title{
+        height: 70vh;
+    }
+    #hero{
+        height: 70%;
+    }
+
+    .portfolio-img{
+        padding: 0 1rem;
+        overflow: hidden;
+    }
+
+
+}
